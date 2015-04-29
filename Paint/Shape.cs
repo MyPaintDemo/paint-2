@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 
-namespace Paint_app
+namespace Paint
 {
     public class Shape
     {
-        public drawMode draw;
+        public DrawMode draw;
         public Rectangle rect;
         public String text;
         public Font font;
@@ -17,21 +17,19 @@ namespace Paint_app
         public Pen pen;
         public Point p1;
         public Point p2;
-
         public Image img;
-
 
         public Shape()
         {
         }
 
-        public Shape(Image a,drawMode mode)
+        public Shape(Image a, DrawMode mode)
         {
             img = a;
             draw = mode;
         }
 
-        public Shape(Point a, Point b, Pen p, drawMode mode)
+        public Shape(Point a, Point b, Pen p, DrawMode mode)
         {
             p1 = a;
             p2 = b;
@@ -39,7 +37,7 @@ namespace Paint_app
             draw = mode;
         }
 
-        public Shape(Point x, Point y, Brush b,Size s,drawMode mode)
+        public Shape(Point x, Point y, Brush b,Size s,DrawMode mode)
         {
             rect.X = x.X;
             rect.Y = x.Y;
@@ -48,25 +46,21 @@ namespace Paint_app
             draw = mode;
         }
 
-        public Shape(Rectangle rectangle,Pen p, drawMode mode)
+        public Shape(Rectangle rectangle,Pen p, DrawMode mode)
         {
             rect = rectangle;
             pen = p;
             draw = mode;
-
-
         }
 
-        public Shape(Rectangle rectangle, Brush b, drawMode mode)
+        public Shape(Rectangle rectangle, Brush b, DrawMode mode)
         {
             rect = rectangle;
             brush = b;
             draw = mode;
-
-
         }
 
-        public Shape(String t,Font f,Brush b, Point p,  drawMode mode)
+        public Shape(String t,Font f,Brush b, Point p,  DrawMode mode)
         {
             text = t;
             draw = mode;
@@ -75,7 +69,7 @@ namespace Paint_app
             point = p;
         }
 
-        public Shape(Point x, Brush b, Size s,drawMode mode)
+        public Shape(Point x, Brush b, Size s,DrawMode mode)
         {
             rect.X = x.X;
             rect.Y = x.Y;
@@ -85,7 +79,7 @@ namespace Paint_app
             draw = mode;
         }
 
-        public Shape(Point x, Pen p, Size s, drawMode mode)
+        public Shape(Point x, Pen p, Size s, DrawMode mode)
         {
             rect.X = x.X;
             rect.Y = x.Y;
@@ -94,15 +88,5 @@ namespace Paint_app
             pen = p;
             draw = mode;
         }
-
-
-
-
-
-
-
-
-
-
     }
 }

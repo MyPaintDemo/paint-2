@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Paint_app
+namespace Paint
 {
-    public enum drawMode
+    public enum DrawMode
     {
         Square,
-        fillSquare,
-        fillCircle,
+        FillSquare,
+        FillCircle,
         Circle,
         Brush,
         Line,

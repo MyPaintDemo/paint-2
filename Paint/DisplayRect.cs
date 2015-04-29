@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace Paint_app
+namespace Paint
 {
     public class DisplayRect
     {
